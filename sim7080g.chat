@@ -1,0 +1,7 @@
+ABORT "BUSY"
+ABORT "NO CARRIER"
+ABORT "ERROR"
+"" "AT+CFUN=1" "OK"
+"OK" "AT+CGDCONT=1,\"IP\",\"ppsim.jp\"" "OK"
+"OK" "AT+CGACT=1,1" "OK"
+"OK" "ATD*99#" "CONNECT \d\c"

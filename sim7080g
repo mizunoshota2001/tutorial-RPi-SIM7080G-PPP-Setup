@@ -1,0 +1,9 @@
+/dev/ttyAMA0 9600
+connect 'chat -v -f /etc/chatscripts/sim7080g.chat'
+defaultroute
+usepeerdns
+noipdefault
+persist
+noauth
+user "pp@sim"
+password "jpn"
