@@ -14,17 +14,13 @@ def send_at_command(command, wait_for_response=True):
     print(f"Response: {response}")
     return response
 
-send_at_command('AT')
 send_at_command('AT+CPIN?')
-send_at_command('AT+CNMP=38')
-send_at_command('AT+CMNB=1')
 send_at_command('AT+CSQ')
-send_at_command('AT+CGREG?')
+send_at_command('AT+CGATT?')
+send_at_command('AT+COPS?')
 send_at_command('AT+CGNAPN')
-send_at_command('AT+CPSI?')
-send_at_command('AT+CNACT=0,1')
+send_at_command('AT+CNCFG=0,1,"ppsim.jp"')
 send_at_command('AT+CNACT?')
-send_at_command('AT+CNCAT=0,0')
 
 # 終了処理
 ser.close()
