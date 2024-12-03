@@ -1,9 +1,10 @@
 ```bash
 sudo apt-get install minicom
+ls /dev/tty*
 sudo minicom -s
 ```
 「Serial port setup」 を選択
-「A - Serial Device」 を /dev/ttyS0 に設定
+「A - Serial Device」 を /dev/ttyAMA0 に設定
 「E - Bps/Par/Bits」 を 9600 8N1 に設定（必要に応じてボーレートを変更）
 「F - Hardware Flow Control」 を 「No」 に設定
 「G - Software Flow Control」 を 「No」 に設定

@@ -7,11 +7,17 @@ sudo nano /boot/firmware/config.txt
 sudo nano /etc/ppp/peers/sim7080g
 sudo nano /etc/chatscripts/sim7080g.chat
 
+sudo chat -v -f /etc/chatscripts/sim7080g.chat
+
+sudo nano /etc/ppp/chap-secrets
+
 sudo usermod -a -G dialout $USER
 
 sudo reboot
 
 sudo pppd call sim7080g
+
+ifconfig
 ```
 
 

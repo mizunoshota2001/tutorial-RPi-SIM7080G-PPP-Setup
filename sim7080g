@@ -4,6 +4,6 @@ defaultroute
 usepeerdns
 noipdefault
 persist
-noauth
 user "pp@sim"
 password "jpn"
+require-chap
