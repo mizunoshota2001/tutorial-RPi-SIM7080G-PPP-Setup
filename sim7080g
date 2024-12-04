@@ -1,9 +1,12 @@
-/dev/ttyAMA0 9600
+/dev/ttyAMA0 115200
+user "pp@sim"
+password jpn
 connect 'chat -v -f /etc/chatscripts/sim7080g.chat'
 defaultroute
 usepeerdns
 noipdefault
 persist
-user "pp@sim"
-password "jpn"
-require-chap
++chap
+-chap-ms-v2
+debug
+dump

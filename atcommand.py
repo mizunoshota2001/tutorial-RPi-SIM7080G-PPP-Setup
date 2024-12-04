@@ -1,8 +1,8 @@
 import serial
 import time
-
+import config
 # シリアルポートの設定
-ser = serial.Serial('COM5', 9600)
+ser = serial.Serial(config.PORT, 9600)
 
 # 初期化処理
 def send_at_command(command, wait_for_response=True):
